@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 18, 2023 at 04:39 PM
+-- Generation Time: Dec 18, 2023 at 05:02 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.1.6
 
@@ -31,6 +31,22 @@ CREATE TABLE `cities` (
   `city_id` int(11) NOT NULL,
   `city_name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `cities`
+--
+
+INSERT INTO `cities` (`city_id`, `city_name`) VALUES
+(1, 'Telangana'),
+(2, 'Andhra Pradesh'),
+(3, 'Assam'),
+(4, 'Bihar'),
+(5, 'Chhattisgarh'),
+(6, 'Goa'),
+(7, 'Haryana'),
+(8, 'Himachal Pradesh'),
+(9, 'Karnataka'),
+(10, 'Maharashtra');
 
 -- --------------------------------------------------------
 
@@ -73,7 +89,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cities`
 --
 ALTER TABLE `cities`
-  MODIFY `city_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `city_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
